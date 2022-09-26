@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html><head>
+    
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+    
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="manifest" href="images/manifest.json" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="”viewport”" content="”width=device-width," initial-scale="1″" />
+    
+<title>Contact Us | Dengla Tech</title>
+    
+<style>
+    
+    #success_message{ display: none;}
+    
+    
+    
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+    
+   h1{
+    color: #349493;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+    
+    .logo{
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+    
+   button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin-left: 45%;
+    margin-top: 0;
+    margin-bottom: 0;
+      
+    text-decoration: none;
+    background: black;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    
+}
+
+button:hover,
+button:focus {
+    background: grey;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+  
+    
+    form{
+        padding-top: 150px;
+        background-color: #1D1D1D;
+        color: white;
+    }
+    
+    
+  input[type=submit] {
+  background-color: white;
+  border: none;
+  color: #4CAF50;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+   
+    p{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font: sans-serif;
+        width: 100%;
+        position: static;
+        margin-bottom: 100px;
+        padding: 0;
+        color: #349493;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    form{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .info{
+        float: right;
+        margin-right: 20%;
+        
+    }
+    
+</style> 
+    
+   
+    
+    
+    
+</head>
+
+<body><div id="chat-application" style="z-index: 10000000; overflow: hidden; display: block; margin: 0px; padding: 0px; border: 0px; transition: none; -webkit-transition: none; position: fixed; right: 1px; bottom: 1px; width: 1px; height: 1px; background: transparent;"><iframe id="chat-application-iframe" frameborder="no" style="z-index: 10000001; overflow: hidden; position: relative; width: 100%; height: 100%; margin: 0px; border: none; min-width: inherit; max-width: inherit; min-height: inherit; max-height: inherit; transition: none; -webkit-transition: none; background: transparent;"></iframe></div>
+    
+    
+    
+    <div class="white">
+    <div class="logo">  
+        <img src="icon.webp" />
+    </div>
+    
+    
+    
+    <div class="nav">
+        <a href="index.html" style="text-decoration: none;">Home</a>&nbsp&nbsp<a href="services.html" style="text-decoration: none;">Our Services</a>&nbsp&nbsp<a href="projects.html" style="text-decoration: none;">Projects</a>&nbsp&nbsp<a href="contact.html" style="text-decoration: none;">Contact Us</a>
+    </div>
+    </div>
+    
+    
+    
+       
+    
+<form name="contactform" method="post" action="send_form_email.php">
+    <p>Contact Me</p>
+    <div class="info"><img src="images/contact.JPG" /></div>
+<table width="450px">
+<tbody><tr>
+ <td>
+       <label for="first_name">First Name *</label>
+ </td>
+ <td>
+  <input type="text" name="first_name" maxlength="50" size="30" />
+ </td>
+</tr>
+<tr>
+ <td>
+      <label for="last_name">Last Name *</label>
+ </td>
+ <td>
+  <input type="text" name="last_name" maxlength="50" size="30" />
+ </td>
+</tr>
+<tr>
+ <td>
+      <label for="email">Email Address</label>
+ </td>
+ <td>
+  <input type="text" name="email" maxlength="80" size="30" />
+ </td>
+</tr>
+<tr>
+ <td>
+     <label for="telephone">Phone No.</label>
+ </td>
+ <td>
+  <input type="text" name="telephone" maxlength="30" size="30" />
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+      <label for="comments">Message </label>
+ </td>
+ <td valign="top">
+  <textarea name="comments" maxlength="1000" cols="31" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+    <input type="submit" value="Submit" />
+ </td>
+</tr>
+</tbody></table>
+</form>      
+
+
+    
+    
+    <!--@ inlined-iframe <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29022.176979641525!2d72.71544260000002!3d24.5970594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75b4d08dc84e4875!2sBlind&#39;s+School!5e0!3m2!1sen!2sin!4v1547202283476" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""> @-->
+<DIV>
+    
+    
+    
+    
+  
+  
+    <div id="mapDiv" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 987; transform: matrix(1, 0, 0, 1, -182, -45);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; transition-duration: 0ms; -webkit-transition-duration: 0ms; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" src="about:blank" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe></div></div></div>
+  
+
+<div style="position: absolute; bottom: 18px; left: 10px; z-index: 1;"><div dir="ltr"><div class="gm-inset gm-inset-hover-enabled"><div ghflowid="inset-map" class="gm-inset-map gm-inset-map-small gm-inset-light" title="Show satellite imagery"><div style="z-index: 1; position: absolute; height: 38px; width: 38px;"></div><div class="gm-inset-map-impl" style="height: 38px; width: 38px; z-index: 0; position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 991; transform: matrix(1, 0, 0, 1, -107, -227);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 991; transform: matrix(1, 0, 0, 1, -107, -227);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear; -webkit-transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://khms1.googleapis.com/kh?v=845&amp;hl=en-US&amp;gl=IN&amp;x=359&amp;y=219&amp;z=9" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;" /></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; transition-duration: 0ms; -webkit-transition-duration: 0ms; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" src="about:blank" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe></div></div></div></div></div></div></div><div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"><span style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span></div><div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"><span style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span></div></DIV>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29022.176979641525!2d72.71544260000002!3d24.5970594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75b4d08dc84e4875!2sBlind&#39;s+School!5e0!3m2!1sen!2sin!4v1547202283476" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!--@ end-inlined-iframe @-->
+    
+    <div class="last">
+    
+    +91 9413040900  
+        <br /><br />
+    <a target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/pg/Dengla-Tech-276938009665282"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border="0" /></a>
+        
+        <a title="Connect with me on LinkedIn" href="https://www.linkedin.com/in/shivansh-dengla-a5baa9179">
+        <img src="images/linkedinfinal.jpg">
+        </a>
+        
+         <a title="Follow Me On Instagram" href="https://www.instagram.com/shivanshdengla/">
+        <img src="images/igram.jpg">
+        </a>
+        
+        <br /><br />
+    </div>
+    
+    
+    <div class="end">
+    &#169 2021 by Dengla Tech
+    </div>
+    
+    <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8175792.js"></script>
+<!-- End of HubSpot Embed Code -->
+    
+</body></html>
